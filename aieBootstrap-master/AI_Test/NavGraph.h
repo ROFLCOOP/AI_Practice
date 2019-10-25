@@ -12,6 +12,6 @@ public:
 	const vector<Node*> FindRoute(Node* start, Node* end);
 
 private:
-	vector<Node*> nodes;
+	vector<Node*> m_nodes;
 };
 

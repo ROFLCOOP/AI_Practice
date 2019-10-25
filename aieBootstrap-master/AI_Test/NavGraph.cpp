@@ -19,6 +19,10 @@ const vector<Node*> NavGraph::FindRoute(Node * start, Node * end)
 		return lhs->fScore > rhs->fScore;
 	};
 	std::priority_queue<Node*, vector<Node*>, decltype(cmp)> queue(cmp);
+	
+	for (Node* node : m_nodes)
+		queue.push(node);
+
 	return vector<Node*>();
 }
 
